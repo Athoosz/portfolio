@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700;800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+*::after{
+    scroll-padding-top: 10rem;
+}
+
+.centro1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.centro2 {
+    margin-top: 2em;
+    width: 95%;
+    height: 6400px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titlediv {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerMenu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+#lbl1 {
+    font-weight: 275;
+    font-size: 32px;
+    line-height: 48px;
+    color: #434343;
+}
+
+#lbl2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    color: #FFFFFF;
+}
+
+.seta {
+    width: 61px;
+    height: 95px;
+    text-align: center;
+    margin-top: 20em;
+}
+
+#lblscroll {
+    font-weight: 250;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+.containerSobreMim {
+    margin-top: 20em;
+    width: 1200px;
+    height: 697px;
+    
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 150px 210px 1fr;
+    grid-template-areas: 
+    "sobremim foto" 
+    "texto foto" 
+    "grafico foto"
+}
+
+.foto {
+    grid-area: foto;
+}
+
+.foto img{
+    width: 550px;
+    height: 550px;
+}
+
+.sobremim {
+    grid-area: sobremim;
+}
+
+.sobremim label {
+    font-weight: 800;
+    font-size: 96px;
+    line-height: 144px;
+    color: rgba(67, 67, 67, 0.5);
+}
+
+.texto {
+    grid-area: texto;
+    width: 680px;
+    height: 270px;
+}
+
+.texto label {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.containerGraf {
+    grid-area: grafico;
+    width: 610px;
+    height: 189px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.progressbar {
+    width: 100%;
+    height: 50px;
+}
+
+.progresso {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.barra {
+    border: 2px solid #FFFFFF;
+}
+
+#barra2 {
+    z-index: 2;
+    position: absolute;
+    margin-top: -2px;
+    margin-left: -2px;
+    border: 2px solid #FDDE23;
+    width: 457.5px;
+}
+
+#barra3 {
+    z-index: 2;
+    position: absolute;
+    margin-top: -2px;
+    margin-left: -2px;
+    border: 2px solid #FDDE23;
+    width: 565px;
+}
+
+#barra4 {
+    z-index: 2;
+    position: absolute;
+    margin-top: -2px;
+    margin-left: -2px;
+    border: 2px solid #FDDE23;
+    width: 560px;
+}
+
+.containerMenu,
+.titlediv,
+.seta,
+.containerSobreMim,
+.oqeusei {
+    visibility: hidden;
+}
+
+.oqeusei {
+    margin-top: 20em;
+    width: 790px;
+    height: 289px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.oqeusei label {
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 96px;
+    color: rgba(67, 67, 67, 0.5);
+}
+
+.containerBloco {
+    display: flex;
+    height: 150px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.bloco {
+    width: 106px;
+    height: 145px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bloco label {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.title2 {
+    display: flex;
+    margin-top: 24em;
+    width: 400px;
+    height: 180px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#titulo1 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 60px;
+    color: rgba(67, 67, 67, 0.5);
+}
+
+#titulo2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.containerProjeto {
+    margin-top: 15em;
+    width: 1200px;
+    height: 572px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.blocoimg {
+    display: flex;
+    background-color: gold;
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blocoimg img {
+   width: 100%;
+   height: 100%;
+}
+
+.blocotexto {
+    width: 626px;
+    height: 356px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.minititle {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+.minitexto {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #6C757D;
+}
+
+.btnVerProjeto label {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FDDE23;
+}
+
+.btnVerProjeto {
+    text-decoration: none;
+}
+
+.containerRodape {
+    display: flex;
+    margin-top: 20em;
+    width: 463px;
+    height: 350px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.RS {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#label1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#label2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#label3 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.containerbtnmenu {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50px;
+    transition: 0.4s ease;
+    transition-delay: 0.08s;
+}
+
+.containerbtnmenu.active {
+    height: 200px;
+    transition: 0.5s ease;
+}
+
+.containerbtnmenu.active .navItems {
+    visibility: visible;
+    transition: 0.5s ease;
+    transition-delay: 0.08s;
+}
+
+.containerbtnmenu.active .navItems a img {
+    transform: scale(1);
+    transition: 0.5s ease;
+    transition-delay: 0.08s;
+}
+
+.navItems {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    visibility: hidden;
+}
+
+.navItems img {
+    width: 24px;
+    height: 24px;
+}
+
+.btnMenu{
+    width: 50px;
+    height: 47.8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#barras{
+    width: 35px;
+    height: 35px;
+}
+
+#item1{
+    width: 230px;
+}
+
+#item1:hover{
+    width: 245px;
+}
+
+.item{
+    display: flex;
+    color: #FFFFFF;
+    width: 190px;
+    visibility: hidden;
+    justify-content: flex-end;
+}
+
+#item3{
+    width: 195px;
+}
+
+#item3:hover{
+    width: 215px;
+}
+
+.item label{
+    padding-left: 20px;
+}
+
+.containerbtnmenu.active .item {
+  visibility: visible;
+}
+
+.item:hover{
+    transition: 0.5s ease;
+    transition-delay: 0.08s;
+    width: 205px;
+    
+}
+
+.item img{
+   width: 24px;
+   height: 24px;
+}
